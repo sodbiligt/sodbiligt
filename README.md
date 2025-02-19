@@ -1,9 +1,3 @@
-import textwrap
-import shutil
-
-# Get the terminal width
-terminal_width = shutil.get_terminal_size().columns
-
 # The text to be centered
 text = """
 Hi 👋 I'm Sodbiligt Ganbadrakh
@@ -34,16 +28,6 @@ Tools: Tableau, Google Analytics, Power BI, Git
 Frameworks & Platforms: React, Flask, TailwindCSS
 """
 
-# Function to center text
-def center_text(text, width):
-    centered_lines = []
-    for line in text.splitlines():
-        centered_line = line.center(width)
-        centered_lines.append(centered_line)
-    return "\n".join(centered_lines)
-
 # Center the text
-centered_text = center_text(text, terminal_width)
-
-# Print the centered text
-print(centered_text)
+for line in text.splitlines():
+    print(line.center(80))  # Adjust the width (80) as needed
