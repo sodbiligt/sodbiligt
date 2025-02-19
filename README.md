@@ -1,4 +1,5 @@
 Hi 👋 I'm Sodbiligt Ganbadrakh
+
 💡 About Me:
 I'm a second-year Computer Science and Business Administration student at Furman University, originally from Mongolia 🇲🇳. I have a strong interest in web development, data analysis, and business strategy, and I enjoy working on projects that combine technology and problem-solving.
 
