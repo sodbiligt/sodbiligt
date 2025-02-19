@@ -16,7 +16,7 @@ I'm a second-year Computer Science and Business Administration student at Furman
 - Gained experience in business research and analysis through coursework and clubs
 
 ## 🌐 Connect with me:
-[LinkedIn](#)
+[LinkedIn](https://www.linkedin.com/in/sodbiligt/)
 
 ## 💻 Tech Stack:
 **Languages:** Python, SQL, PHP, JavaScript, HTML/CSS  
