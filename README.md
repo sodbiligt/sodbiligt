@@ -1,42 +1,49 @@
-# Portfolio Blog Starter
+import textwrap
+import shutil
 
-This is a porfolio site template complete with a blog. Includes:
+# Get the terminal width
+terminal_width = shutil.get_terminal_size().columns
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+# The text to be centered
+text = """
+Hi 👋 I'm Sodbiligt Ganbadrakh
 
-## Demo
+💡 About Me:
+I'm a second-year Computer Science and Business Administration student at Furman University with an interest in web development, data analysis, and business strategy. I enjoy working on projects that combine technology and problem-solving.
 
-https://portfolio-blog-starter.vercel.app
+🚀 What I'm Up To:
 
-## How to Use
+Learning more about data analysis and visualization tools like Python and Tableau
+Managing Instagram pages with over 200K followers and experimenting with social media strategies
+Exploring investment research as part of the Furman University Investment Club
+Working as a TA for CSC121 and helping students with programming fundamentals
 
-You can choose from one of the following two methods to use this repository:
+🎓 Experience & Projects:
 
-### One-Click Deploy
+Built a micro-blogging platform using PHP and MySQL
+Developed data insights for a wildlife conservation project
+Worked on SEO and engagement strategies for social media pages
+Gained experience in business research and analysis through coursework and clubs
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+🌐 Connect with me:
+LinkedIn
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+💻 Tech Stack:
+Languages: Python, SQL, PHP, JavaScript, HTML/CSS
+Tools: Tableau, Google Analytics, Power BI, Git
+Frameworks & Platforms: React, Flask, TailwindCSS
+"""
 
-### Clone and Deploy
+# Function to center text
+def center_text(text, width):
+    centered_lines = []
+    for line in text.splitlines():
+        centered_line = line.center(width)
+        centered_lines.append(centered_line)
+    return "\n".join(centered_lines)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+# Center the text
+centered_text = center_text(text, terminal_width)
 
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
-
-Then, run Next.js in development mode:
-
-```bash
-pnpm dev
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+# Print the centered text
+print(centered_text)
